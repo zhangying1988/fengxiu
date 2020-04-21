@@ -69,6 +69,12 @@
 					"pathName": "pages/detail/detail",
 					"query": "pid=12",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/category/category",
+					"pathName": "pages/category/category",
+					"scene": null
 				}
 			]
 		}
