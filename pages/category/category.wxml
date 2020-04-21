@@ -12,7 +12,25 @@
         >搜索商品</l-button>
     </view>
     <view class="main">
-        <view></view>
+        <view>
+            <l-segment
+                    placement="left"
+                    item-height="100"
+                    even="{{false}}"
+                    height="900"
+                    width="160"
+                    l-active-class="segment-item-active"
+                    l-inactive-class="segment-item"
+                    l-line-class="l-seg-line"
+            >
+                <l-segment-item key='1' tab='测试1'></l-segment-item>
+                <l-segment-item key='2' tab='测试1'></l-segment-item>
+                <l-segment-item key='3' tab='测试1'></l-segment-item>
+                <l-segment-item key='4' tab='测试1'></l-segment-item>
+                <l-segment-item key='5' tab='测试1'></l-segment-item>
+                <l-segment-item key='6' tab='测试1'></l-segment-item>
+            </l-segment>
+        </view>
         <view></view>
     </view>
 </view>
