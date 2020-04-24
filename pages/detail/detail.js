@@ -2,6 +2,8 @@
 import {Spu} from "../../models/spu";
 import {ShoppingWay} from "../../core/enum";
 import {SaleExplainale} from "../../models/sale-explain";
+import {getSystemSize, getWindowHeightRpx} from "../../utils/system";
+import {px2rpx} from "../../miniprogram_npm/lin-ui/utils/util";
 
 Page({
 
@@ -15,13 +17,16 @@ Page({
     onLoad: async function (options) {
         const pid = options.pid
         const spu = await Spu.getDetail(pid)
-        const explain=await SaleExplainale.getFixed()
+        const explain = await SaleExplainale.getFixed()
+        const windowHeight = await getWindowHeightRpx()
+        const h = windowHeight - 100
         this.setData({
             spu,
-            explain
+            explain,
+            h
         })
-        console.log('add',explain)
-        console.log('data',this.data)
+        console.log('add', explain)
+        console.log('data', this.data)
     },
     onGotoHome(evnet) {
         wx.switchTab({

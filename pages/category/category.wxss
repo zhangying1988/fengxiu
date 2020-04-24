@@ -30,7 +30,7 @@ page {
 
 .segment-item {
     color: #666 !important;
-    background-color: #eee !important;
+    background-color: #fff !important;
     font-size: 26rpx !important;
 }
 
@@ -39,4 +39,11 @@ page {
     height: 40rpx !important;
     background-color: #157658 !important;
     border-radius: 0 !important;
+}
+.main{
+    margin-top: 20rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 2rpx solid #f3f3f3;
 }

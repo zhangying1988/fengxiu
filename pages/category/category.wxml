@@ -17,7 +17,7 @@
                     placement="left"
                     item-height="100"
                     even="{{false}}"
-                    height="900"
+                    height="{{segHeight}}"
                     width="160"
                     l-active-class="segment-item-active"
                     l-inactive-class="segment-item"
